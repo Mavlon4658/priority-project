@@ -1,0 +1,33 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+$font-onest: "Onest", sans-serif;
+// Fonts end
+
+// Colors
+$color-base-black: #222222;
+$color-base-blue: #0077FF;
+$color-base-white: #FFFFFF;
+$color-secondary: #9999AA;
+$color-secondary-basic: #555566;
+$color-secondary-stroke: #E4E8F3;
+$color-secondary-bg: #F7F8FB;
+$color-secondary-bg-button-1: #E5F1FF;
+$color-secondary-bg-button-2: #F4F6FA;
+$color-support-green: #60C339;
+$color-support-red: #E9454D;
+$color-support-yellow: #FFEB81;
+// Colors end
+
+@mixin media($value) {
+    @if ($value < 0) {
+        @media screen and (min-width: calc($value * (-1)) + 'px') {
+            @content;
+        }
+
+    } @else {
+        @media screen and (max-width: $value + 'px') {
+            @content;
+        }
+    }
+}
