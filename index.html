@@ -18,6 +18,52 @@
         <header class="header">
         </header>
         <!-- Header end -->
+
+        <!-- Sales modal -->
+        <section class="modal sales-modal">
+            <div class="modal-bg"></div>
+            <div class="modal-dialog__wrap">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <button class="modal-close">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 6L6 18M6 6L18 18" stroke="#9999AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="sales-modal__left">
+                            <img src="./assets/images/salse-modal-bg.png" alt="">
+                        </div>
+                        <div class="sales-modal__right">
+                            <h3>получите чек-лист за e-mail</h3>
+                            <h2>
+                                <span>25 ошибок</span> маркетинга,
+                                убивающих продажи
+                            </h2>
+                            <p>Скачайте чек-лист и проверьте, совершаете ли вы эти фатальные ошибки в маркетинге (95% компаний теряют из-за них до 70% прибыли)</p>
+                            <div class="sales-modal__right-bottom">
+                                <div class="form-control">
+                                    <label class="form-label">e-mail</label>
+                                    <input type="text" class="form-inp">
+                                </div>
+                                <div class="btns-wrap">
+                                    <div class="checkbox">
+                                        <div class="checkbox-icon__wrap">
+                                            <input type="checkbox" name="" id="">
+                                            <div class="checkbox-icon">
+                                                <img src="./assets/images/check-icon.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="checkbox-text">Я согласен на <a href="#">обработку персональных данных</a></div>
+                                    </div>
+                                    <button class="btn-blue">Отправить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sales modal end -->
     
         <main>
 
@@ -50,7 +96,7 @@
                         <div class="line"></div>
                         <p>Найдём минимум 10 точек роста выручки или вернём деньги.</p>
                         <div class="home-content__bottom">
-                            <a href="#" class="btn-blue">Получить экспресс-бриф</a>
+                            <a href="#" class="btn-blue sales-modal__open">Получить экспресс-бриф</a>
                             <a href="#" class="btn-play">
                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M9.00001 0H13V14H9.00001V0ZM1 0H4.99998V14H1V0Z" fill="white" />
@@ -944,7 +990,7 @@
                             </ul>
                             <div class="tarif-card__bottom">
                                 <div class="price">от 70 000 ₽</div>
-                                <a href="#" class="btn-blue">Заказать</a>
+                                <a href="#" class="btn-blue sales-modal__open">Заказать</a>
                             </div>
                         </div>
                         <div class="tarif-card">
@@ -965,7 +1011,7 @@
                             </ul>
                             <div class="tarif-card__bottom">
                                 <div class="price">от 90 000 ₽</div>
-                                <a href="#" class="btn-blue">Заказать</a>
+                                <a href="#" class="btn-blue sales-modal__open">Заказать</a>
                             </div>
                         </div>
                         <div class="tarif-card">
@@ -990,7 +1036,7 @@
                             </ul>
                             <div class="tarif-card__bottom">
                                 <div class="price">от 120 000 ₽</div>
-                                <a href="#" class="btn-blue">Заказать</a>
+                                <a href="#" class="btn-blue sales-modal__open">Заказать</a>
                             </div>
                         </div>
                     </div>

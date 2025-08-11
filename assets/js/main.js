@@ -91,3 +91,34 @@ if (accordions.length) {
         });
     });
 }
+
+// modals
+const modalCls = ['.sales-modal'];
+
+modalCls.forEach(cls => {
+    const modal = document.querySelector(cls);
+    const modalOpenBtns = document.querySelectorAll(`${cls}__open`);
+    const modalCloseBtn = document.querySelector(`${cls} .modal-close`);
+    const modalBg = document.querySelector(`${cls} .modal-bg`);
+
+    const modalClose = () => {
+        bodyVisible();
+        modal.classList.remove('active');
+    }
+
+    if (modalOpenBtns.length) {
+        modalOpenBtns.forEach(btn => {
+            btn.onclick = e => {
+                e.preventDefault();
+                modal.classList.add('active');
+                bodyHidden();
+            }
+        })
+    }
+
+    modalCloseBtn.onclick = () => modalClose();
+
+    modalBg.onclick = () => modalClose();
+
+})
+// modals end
