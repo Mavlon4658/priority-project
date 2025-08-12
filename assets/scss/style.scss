@@ -866,6 +866,17 @@ button, input, textarea, li, div {
             }
         }
     }
+
+    &-right__swp {
+        .swiper {
+            &-slide {
+                &:not(.swiper-slide-active) {
+                    height: 0;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
 }
 // Direction end
 

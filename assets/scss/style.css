@@ -897,6 +897,10 @@ button, input, textarea, li, div {
     line-height: 157%;
   }
 }
+.direction-right__swp .swiper-slide:not(.swiper-slide-active) {
+  height: 0;
+  overflow: hidden;
+}
 
 .skills {
   padding: 80px 0;

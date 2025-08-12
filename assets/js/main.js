@@ -16,10 +16,21 @@ if (phoneInp.length) {
     });
 }
 
+const directionRightSwp = new Swiper('.direction-right__swp .swiper', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    allowTouchMove: false,
+    effect: 'fade',
+})
+
 const directionSwp = new Swiper('.direction-swp .swiper', {
     slidesPerView: 1,
     spaceBetween: 0,
     loop: true,
+    thumbs: {
+        swiper: directionRightSwp,
+    },
     navigation: {
         nextEl: '.direction-swp .swp-btn__next',
         prevEl: '.direction-swp .swp-btn__prev',
