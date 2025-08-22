@@ -117,19 +117,46 @@ modalCls.forEach(cls => {
         modal.classList.remove('active');
     }
 
-    if (modalOpenBtns.length) {
-        modalOpenBtns.forEach(btn => {
-            btn.onclick = e => {
-                e.preventDefault();
-                modal.classList.add('active');
-                bodyHidden();
-            }
-        })
+    if (modal) {
+        setTimeout(() => {
+            modal.classList.add('active');
+            bodyHidden();
+        }, 60000);
     }
+
 
     modalCloseBtn.onclick = () => modalClose();
 
     modalBg.onclick = () => modalClose();
-
 })
 // modals end
+
+const videoModal = document.querySelector('.video-modal');
+const videoModalOpen = document.querySelector('.video-modal__open');
+const videoModalClose = document.querySelector('.video-modal__close');
+const videoModalBg = document.querySelector('.video-modal__bg');
+
+if (videoModal) {
+    videoModalOpen.onclick = e => {
+        e.preventDefault();
+        videoModal.classList.add('active');
+        bodyHidden();
+    }
+    const closeModal = () => {
+        videoModal.classList.remove('active');
+        bodyVisible();
+    }
+
+    videoModalClose.onclick = () => closeModal();
+    videoModalBg.onclick = () => closeModal();
+}
+
+const homeSwp = new Swiper('.home .swiper', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    effect: 'fade',
+    loop: true,
+    autoplay: {
+        delay: 4000,
+    },
+})

@@ -64,6 +64,20 @@
             </div>
         </section>
         <!-- Sales modal end -->
+
+        <!-- Video modal -->
+        <section class="video-modal">
+            <div class="video-modal__bg"></div>
+            <div class="video-modal__content">
+                <button class="video-modal__close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <iframe width="1819" height="871" src="https://www.youtube.com/embed/2EODK3fjMNQ" title="Профессия аудитора: кто это и чем занимается?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+        <!-- Video modal end -->
     
         <main>
 
@@ -90,18 +104,40 @@
             <!-- Home -->
             <section class="home">
                 <div class="container">
-                    <div class="home-content">
-                        <img src="./assets/images/home-bg.png" alt="" class="bg-img">
-                        <h2>Аудит маркетинга за 7 дней</h2>
-                        <div class="line"></div>
-                        <p>Найдём минимум 10 точек роста выручки или вернём деньги.</p>
-                        <div class="home-content__bottom">
-                            <a href="#" class="btn-blue sales-modal__open">Получить экспресс-бриф</a>
-                            <a href="#" class="btn-play">
-                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M9.00001 0H13V14H9.00001V0ZM1 0H4.99998V14H1V0Z" fill="white" />
-                                </svg>
-                            </a>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="home-content">
+                                    <video src="./assets/videos/home-video-1.mp4" muted loop autoplay class="bg-img"></video>
+                                    <h2>Аудит маркетинга за 7 дней</h2>
+                                    <div class="line"></div>
+                                    <p>Найдём минимум 10 точек роста выручки или вернём деньги.</p>
+                                    <div class="home-content__bottom">
+                                        <a href="#" class="btn-blue sales-modal__open">Получить экспресс-бриф</a>
+                                        <a href="#" class="btn-play">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9.00001 0H13V14H9.00001V0ZM1 0H4.99998V14H1V0Z" fill="white" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="home-content">
+                                    <img src="./assets/images/home-bg.png" alt="" class="bg-img">
+                                    <h2>Бизнес-аналитика</h2>
+                                    <div class="line"></div>
+                                    <p>Найдём минимум 10 точек роста выручки или вернём деньги.</p>
+                                    <div class="home-content__bottom">
+                                        <a href="#" class="btn-blue sales-modal__open">Получить экспресс-бриф</a>
+                                        <a href="#" class="btn-play">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9.00001 0H13V14H9.00001V0ZM1 0H4.99998V14H1V0Z" fill="white" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <ul class="home-card__wrap">
@@ -895,7 +931,7 @@
                     </div>
                     <div class="job-video">
                         <img src="./assets/images/video-bg.png" alt="">
-                        <button>
+                        <button class="video-modal__open">
                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2.375 0V14L13.375 6.99998L2.375 0Z" fill="white" />
                             </svg>
